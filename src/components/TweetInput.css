@@ -1,0 +1,74 @@
+.tweet-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tweet-input, .tweet-textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .tweet-textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .tweet-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tweet-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .tweet-button:hover:enabled {
+    background-color: #0056b3;
+  }
+  
+  .loading-spinner {
+    margin-top: 20px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #007bff;
+    animation: spin 1s ease infinite;
+  }
+  .estimate-box {
+    width: 100%;
+    margin-top: 100px;
+    justify-content: center;
+
+  
+
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
